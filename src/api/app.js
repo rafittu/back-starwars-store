@@ -12,5 +12,6 @@ app.get('/starstore/products', ProductController.getAll);
 
 app.post('/starstore/buy', SalesController.create);
 app.get('/starstore/history', SalesController.getAll);
+app.get('/starstore/history/:id', SalesController.getById);
 
 module.exports = app;
