@@ -7,6 +7,12 @@ const create = async (title, price, zipcode, seller, thumbnailHd) => {
   return { status: 201, product };
 };
 
+const getAll = async () => {
+  const products = await ProductModel.getAll();
+  return { status: 200, products };
+};
+
 module.exports = {
   create,
+  getAll,
 };

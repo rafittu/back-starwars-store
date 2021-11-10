@@ -12,6 +12,13 @@ const create = async (title, price, zipcode, seller, thumbnailHd) => {
   };
 };
 
+const getAll = async () => {
+  const db = await connect();
+  const products = await db.collection('starwarsStore').find().toArray();
+  return products;
+};
+
 module.exports = {
   create,
+  getAll,
 };

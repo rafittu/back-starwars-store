@@ -7,5 +7,6 @@ app.use(bodyParser.json());
 const ProductController = require('../controllers/productsController');
 
 app.post('/starstore/product', ProductController.create);
+app.get('/starstore/products', ProductController.getAll);
 
 module.exports = app;
