@@ -3,7 +3,7 @@ const connect = require('./connection');
 const create = async (title, price, zipcode, seller, thumbnailHd) => {
   const db = await connect();
   const date = new Date(); // Formatar data para dd-mm-YYYY
-  await db.collection('starwarsStore').insertOne({
+  await db.collection('products').insertOne({
     title, price, zipcode, seller, thumbnailHd, date,
   });
 
@@ -14,7 +14,7 @@ const create = async (title, price, zipcode, seller, thumbnailHd) => {
 
 const getAll = async () => {
   const db = await connect();
-  const products = await db.collection('starwarsStore').find().toArray();
+  const products = await db.collection('products').find().toArray();
   return products;
 };
 
