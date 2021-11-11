@@ -53,7 +53,6 @@ $ sudo service mongod start
    "zipcode":"78993-000",
    "seller":"João da Silva",
    "thumbnailHd":"https://cdn.awsli.com.br/600x450/21/21351/produto/3853007/f66e8c63ab.jpg",
-   "date":"26/11/2015"
 }
 ```
 
