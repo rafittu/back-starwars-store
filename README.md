@@ -44,7 +44,37 @@ $ sudo service mongod start
 
 4. Entre na pasta ./src/api/app.js e verifique as rotas disponíveis para manipular o banco, utilizando a extensão de sua preferência.
 
-5. Para rodar os testes
+5. Método para inserir um produto novo no banco de dados
+
+```bash
+{
+   "title":"Blusa do Imperio",
+   "price":7990,
+   "zipcode":"78993-000",
+   "seller":"João da Silva",
+   "thumbnailHd":"https://cdn.awsli.com.br/600x450/21/21351/produto/3853007/f66e8c63ab.jpg",
+   "date":"26/11/2015"
+}
+```
+
+6. Método que recebe uma nova compra junto com os dados do cliente
+
+```bash
+{
+   "client_id":"7",  
+   "client_name":"Luke Skywalker",
+   "total_to_pay":1236,
+   "credit_card":{
+      "card_number":"*********1234",
+      "value":7990,
+      "cvv":789,
+      "card_holder_name":"Luke Skywalker",
+      "exp_date":"12/24"
+   }
+}
+```
+
+7. Para rodar os testes
 
 ```bash
 $ npm run test
@@ -54,7 +84,7 @@ ou
 $ npm run test:coverage
 ```
 
-6. Para verificar a padronização
+8. Para verificar a padronização
 
 ```bash
 $ npm run lint
