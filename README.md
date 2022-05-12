@@ -1,4 +1,4 @@
-# Desafio técnico ActivePay
+# Star Wars Store
 
 Backend da aplicação Star Wars Store, que consiste em uma API REST a ser consumida por um aplicativo (Android e iOS).
 Os itens adicionados no carrinho pelos usuários, serão transmitido para a API e será feito uma transação e-commerce.
